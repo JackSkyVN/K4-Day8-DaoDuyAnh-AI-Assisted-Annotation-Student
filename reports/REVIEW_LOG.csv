@@ -1,0 +1,8 @@
+round,frame_id,object,action,rule_or_reason
+1,frame_0099.jpg,xe oto nhỏ ở giữa bên trái,added,AI bỏ sót xe đang chạy trong làn giữa - thấy rõ thân xe và đường viền đủ để vẽ box theo GUIDELINE_LABEL.md
+1,frame_0099.jpg,xe phía dưới cùng bên phải bị cắt mép ảnh,edited,AI vẽ box ôm cả vùng ngoài mép ảnh - sửa lại chỉ bao phần thân xe nằm trong khung theo quy tắc xe bị cắt mép
+1,frame_0099.jpg,vệt sáng đèn pha chiếu xuống mặt đường phía trước xe góc trái,deleted,AI nhầm vệt phản chiếu đèn pha trên mặt đường thành xe - theo GUIDELINE_LABEL.md không gán nhãn ánh đèn phản chiếu
+1,frame_0099.jpg,xe ở xa nhóm trên cùng bên phải (box nhỏ hàng trên),accepted,box AI khớp đúng với thân xe - đủ ranh giới và không ôm vệt đèn giữ nguyên
+1,frame_0107.jpg,2 xe bên phải gần mép ảnh bị AI vẽ box chồng lên nhau,deleted,AI tạo box trùng lặp cho cùng một xe - xóa box dư theo quy tắc không gộp hai xe vào một box
+1,frame_0107.jpg,xe ở làn giữa phía dưới bị nhoè do chuyển động,edited,AI vẽ box thiếu phần trước xe nhoè - sửa rộng box ôm đủ vùng nhoè của thân xe theo GUIDELINE_LABEL.md
+1,frame_0107.jpg,xe tối đang chạy phía trên bên phải sát lề đường,added,AI bỏ sót xe đang đi vào làn bên phải - thấy thân xe tối và đèn hậu đủ để xác định đường viền
